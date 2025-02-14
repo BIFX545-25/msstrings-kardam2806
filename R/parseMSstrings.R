@@ -9,13 +9,14 @@
 #' This function takes strings from spectronaut output, pulls metadata on protein modifications, and displays the data in a nice format.
 #'
 #' @param seqs character vector, Peptide sequence sequence strings from Spectronaut output
-#' @param foramat character value
+#' @param format character value
 #'
 #' @return A `protein_mod` object, which is a data.frame with the amino acid sequences and modification.
 #' @export
 #' @importFrom Biostrings AAStringSet
 #' @importFrom dplyr tibble
-#' @importFrom stringr str_extract_all str_replace str_replace_all str_split
+#' @importFrom purrr map map_chr
+#' @importFrom stringr fixed str_extract_all str_replace str_replace_all str_split
 
 # library(Biostrings) # for `AAStringSet` - BiocManager::install('Biostrings')
 # library(dplyr) # for `tibble`

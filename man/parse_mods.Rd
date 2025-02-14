@@ -10,7 +10,7 @@ parse_mods(seqs, format = "Spectronaut")
 \arguments{
 \item{seqs}{character vector, Peptide sequence sequence strings from Spectronaut output}
 
-\item{foramat}{character value}
+\item{format}{character value}
 }
 \value{
 A \code{protein_mod} object, which is a data.frame with the amino acid sequences and modification.
